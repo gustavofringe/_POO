@@ -34,24 +34,29 @@
             <form action="post">
                 <div class="form-group">
                     <label for="title">Titre</label>
-                    <input type="text" id="title" class="form-control" required>
+                    <input type="text" id="title" class="form-control">
+                    <div class="valTitle">
+                        <div class='btn btn-danger'>Vous n'avez pas rentrer un champ valide</div>
+                    </div>
                     <label for="sentence" class="mt-3">Phrase d'accroche</label>
-                    <input type="text" id="sentence" class="form-control" required>
+                    <input type="text" id="sentence" class="form-control">
+                    <div class="valSentence">
+                        <div class='btn btn-danger'>Vous n'avez pas rentrer un champ valide</div>
+                    </div>
                     <label for="content" class="mt-3">Description</label>
-                    <textarea class="form-control" id="content" rows="3" required></textarea>
-                   
+                    <textarea class="form-control" id="content" rows="3"></textarea>
+                    <div class="valContent">
+                        <div class='btn btn-danger'>Vous n'avez pas rentrer un champ valide</div>
+                    </div>
+                </div>
             </form>
- <button id="button" class="btn btn-primary mt-3">Envoyer</button>	
-        </div>
-        </div>
+            <button id="button" class="btn btn-primary mt-3">Envoyer</button>
 
-        <div class="card col-md-3 offset-3" style="width: 20rem;">
-            <div class="card-block">
-                <h4 class="card-title title"></h4>
-                <p class="card-text sentence"></p>
-                <p class="card-text content"></p>
-            </div>
-        </div>
+    </div>
+    </div>
+
+    <div class="card-response">
+
     </div>
 </main>
 

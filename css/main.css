@@ -280,3 +280,11 @@ textarea {
         page-break-after: avoid;
     }
 }
+.valTitle{display: none}
+.valSentence{
+    display: none;}
+.valContent{
+    display: none;}
+#card{
+    width: 20rem;
+}
