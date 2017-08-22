@@ -1,13 +1,19 @@
+/**
+ * admin object
+ * @param {*} title 
+ * @param {*} sentence 
+ * @param {*} content 
+ */
 function admin(title, sentence, content) {
     this.title = title;
     this.sentence = sentence;
     this.content = content;
-    /*this.send = function(){
-     $('.title').text(this.title);
-     $('.sentence').text(this.sentence);
-     $('.content').text(this.content);
-     }*/
 }
+/**
+ * product object
+ * validate form
+ * 
+ */
 function product() {
     this.validateForm = function () {
         var newadmin = new admin($('#title').val(), $('#sentence').val(), $('#content').val());
@@ -46,9 +52,14 @@ function product() {
 
     //$('.card-block').append("<h4 class='card-title title'>"+newadmin.title+"</h4>");
 }
+/**
+ * 
+ * clickto append product card
+ * 
+ */
 $('#button').click(function () {
-    var prod = new product()
-    prod.validateForm();
+    var $prod = new product()
+    $prod.validateForm();
     $('#title').val('');
     $('#sentence').val('');
     $('#content').val('')
